@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeleven Hotel</title>
+    <link href="home.css" rel="stylesheet"> 
+</head>
+
+<body>
+    <!-- logo -->
+    <section id="Header">
+        <a href="home.html">
+            <img id="logo" src="images/Logo 2.jpg"/> 
+        </a>
+        <h1>Reeleven<br>Hotel</h1>
+
+   <!-- Navbar Start -->
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="home.html">Home</a>
+                </li>
+                <li>
+                    <a href="room.html">Room</a>
+                </li>
+                <li>
+                   <a href="about.html">About Us</a> 
+                </li>
+                <li>
+                    <a href="contact.html">Contact Us</a>
+                </li>
+            </ul>
+
+            <!-- button sign in -->
+            <a href="account.html">
+                <button>Sign in</button>
+            </a>
+        </div>
+    </section>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <section id="hero">
+        <!-- tambahkan foto saja -->
+        <img src="images/reeleven building.jpeg" alt="">
+    </section>
+    <!-- Hero End -->
+
+    <!-- Search Bar Start-->
+    <form action="">
+        <label for="city">Enter a City</label> <br>
+        <input type="text" id="city">
+            <br> 
+        <label for="checkin">Check In</label> <br>
+        <input required type="date" id="checkin">
+            <br>
+        <label for="checkout">Check Out</label> <br>
+        <input required type="date" id="checkout">
+            <br>
+        
+        <label for="room">Room</label><br>
+        <select name="Room" id="room">Room
+            <option value="1">1 Room</option>
+            <option value="2">2 Room</option>
+            <option value="3">3 Room</option>
+            <option value="4">4 Room</option>
+        </select>
+            <br>
+        <label for="guest">Guest</label><br>
+        <select name="Guest" id="guest">
+            <option value="1">1 Guest</option>
+            <option value="2">2 Guest</option>
+            <option value="3">3 Guest</option>
+            <option value="4">4 Guest</option>
+        </select>
+            <br>
+        <input type="submit" value="Search">
+    </form> 
+    <!-- Search Bar End -->
+
+    <!-- Facilities Start -->
+    <div class="box-Facilites"></div>
+        <h2>Facilities</h2>
+        <div class="box-kiri">
+            <img src="images/icons/parking_icon_151164.png" width="80px" height="80px">
+            <p><h4>Free Parking</h4></p>
+            <p>Presents freedom from parking fees to enhance user convenience</p>
+        </div>
+
+        <div class="box-kiri2">
+            <img src="images/icons/wifi_icon_151000.png" width="80px" height="80px">
+            <p><h4>Free Wifi</h4></p>
+            <p>Offers convenient access to the internet at no extra cost</p>
+        </div>
+
+        <div class="box-kanan2">
+            <img src="images/icons/services.png" width="80px" height="80px">
+            <p><h4>Free Services</h4></p>
+            <p>Providing room service with a focus on cleanliness and comfort</p>
+        </div>
+
+        <div class="box-kanan">
+            <img src="images/icons/swimming_sport_13275.png" width="80px" height="80px">
+            <p><h4>Swimming Pool</h4></p>
+            <p>An elegantly designed and attractive swimming pool</p>
+        </div>
+    </div>
+    <!-- Facilities End -->
+
+    <!-- Our Service Start -->
+    <div class="container">
+        <h2>Our Service</h2>
+        <main class="grid">
+            <article>
+                <img src="images/hotel room.jpg" width="350px" height="250px">
+                <div class="konten">
+                <h3>Clean Room</h3>
+                </div>
+            </article>
+
+            <article>
+                <img src="images/hotel restaurant.jpg" width="350px" height="250px">
+                <div class="konten">
+                <h3>restaurant</h3>
+                </div>
+            </article>
+
+            <article>
+                <img src="images/gym center hotel.jpg" width="350px" height="250px">
+                <div class="konten">
+                <h3>Fitnes Centre</h3>
+                </div>
+            </article>
+        </main>
+    </div>
+    <!-- Our Service End -->
+
+    <!-- OUr Favorite Room Start -->
+    <div class="box-favorite">
+        <h2>Our Favorite Room</h2>
+        
+    </div>
+    <!-- Our Favorite Room End -->
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="logofooter">
+            <img src="images/Logo 2.jpg">
+            <p><b>REELEVEN<br>HOTEL</b></p>
+        </div>
+
+        <div class="quiklinks">
+            <h4>Quick Links</h4>
+                <a href="about.html">About Our Company</a> <br>
+                <a href="">Service We Provide</a> <br>
+                <a href="">Privacy and Policy</a> <br>
+                <a href="contact.html">Contact Us</a> <br>
+        </div>
+        
+        <div class="Company">
+            <h4>Company</h4>
+                <p>About Company</p> 
+                <p>Our Terstimonies</p>
+                <p>Latest News</p>
+                <p>Our Mission</p>
+        </div>
+
+        <div class="Contact Us">
+            <h4>Contact Us</h4>
+                <p>Jl. Merdeka, Jakarta</p> 
+                <p>+62 812-6128-2456</p> 
+                <p>reelevenhotel@gmail.com</p> 
+        </div>
+        
+        <div class="copyright">
+            <p>2023 Reeleven Hotel, All Right Reserved</p>
+        </div>
+
+    </footer>
+   
+    <!-- Footer End -->
+</body>
+</html>
