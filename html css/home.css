@@ -35,8 +35,8 @@ h1 {
     padding: 0px;
     align-items: center;
     display: inline-flex;
-    /* background-color: #372B2B; */
-    /* border-radius: 5px; */
+    background-color: #372B2B;
+    border-radius: 5px;
 }
 
 .navbar li {
@@ -48,8 +48,9 @@ h1 {
 .navbar a {
     padding: 10px;
     margin-right: 10px;
-    color: #592D2D;
+    color: #f0f0f0;
     font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
 }
 
 .navbar button {
@@ -141,11 +142,15 @@ h1 {
 
 .logofooter p {
     font-family: 'Times New Roman', Times, serif;
-    
 }
 
-kkkkk
-hhhhhh
+.copyright {
+    margin-top: auto;
+    font-size: smaller;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 
 
 
