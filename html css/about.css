@@ -62,13 +62,20 @@ h1 {
 .container {
     background-color: #BEAD8B;
     display: flex;
+    flex-direction: column;
     justify-content: center; /* Menyusun kontennya ke tengah secara horizontal */
    
+}
+
+.container h1 {
+    margin-bottom: 30px;
+    text-align: center;
 }
 
 .content img {
     width: 500px;
     width: 400px;
+    margin-left: 100px;
 }
 
 
