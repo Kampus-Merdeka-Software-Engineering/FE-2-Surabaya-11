@@ -57,3 +57,55 @@ h1 {
     background-color:#f0f0f0;
     color: #592D2D;
 }
+
+/* about us style */
+.container {
+    background-color: #BEAD8B;
+    display: flex;
+    justify-content: center; /* Menyusun kontennya ke tengah secara horizontal */
+   
+}
+
+.content img {
+    width: 500px;
+    width: 400px;
+}
+
+
+
+
+
+/* Style Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #D4D1CB;
+    position: relative;
+}
+
+.logofooter {
+    display: flex;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.logofooter img {
+    height: 56px ;
+    width: 65px;
+    display: flex;
+    margin-left: 150px;
+    border-style: groove;
+    margin-right: 5px;
+}
+
+.logofooter p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.copyright {
+    margin-top: auto;
+    font-size: smaller;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
