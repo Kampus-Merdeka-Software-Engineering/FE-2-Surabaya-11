@@ -69,15 +69,37 @@ h1 {
 
 .container h1 {
     margin-bottom: 30px;
+    margin-top: 50px;
     text-align: center;
+}
+
+.content {
+    display: flex;
+    align-items: center;
 }
 
 .content img {
     width: 500px;
     width: 400px;
-    margin-left: 100px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    max-width: 100%;
 }
 
+.text {
+    flex-direction: column;
+    max-width: 500px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.text h4 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.text p {
+    margin-left: 50px;
+}
 
 
 
