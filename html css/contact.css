@@ -8,9 +8,17 @@ body {
 }
 
 #logo {
-    max-width: 90px;
-    display: inline-block;
-    vertical-align: middle;
+    max-width: 90px; 
+    display: inline-block; 
+    vertical-align: middle; 
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block; 
+    vertical-align: middle; 
     margin: 0;
 }
 
@@ -50,11 +58,7 @@ body {
     color: #592D2D;
 }
 
-.images {
-    width: 40%;
-    height: 50 px;
-    align-items: right;  
-}
+
 
 /* Contact Us Style*/
 *,
