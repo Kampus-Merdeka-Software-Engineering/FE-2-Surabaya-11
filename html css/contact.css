@@ -104,7 +104,7 @@ button{
 
 .form group label{
     display: block;
-    margin: 2re, 0 0.5rem 0;
+    margin: 2rem 0 0.5rem 0;
 }
 
 .form-group input {type="text"}
@@ -116,6 +116,41 @@ button{
     outline: 0;
     transition: border 0,15s;
 }
+
+.form-group input [type="text"],
+.form-group input [type="email"]{
+    height: 4.6rem;
+}
+.form-grouptextare{
+    resize: vertical;
+}
+
+.submit{
+    background: #372B2B;
+    color: white;
+    font-weight: bold;
+    margin-top: 1rem;
+    padding: 1rem 1.5rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.15s;
+
+}
+
+.submit:hover{
+    background: #edb674f1;
+    color: black;
+}
+
+.form-group input [type="text"]:focus,
+.form-group input [type="email"]:focus,
+.form-group textarea:focus {
+    border: 1px solid #edb674f1;
+
+}
+
+
+
 
 /* Style Footer */
 .footer {
