@@ -118,15 +118,14 @@ h1 {
 
 /* style Favorite Room */
 .box-favorite {
+    text-align: center;
     height: 627px;
     width: 1440px;
     margin: 0;
-    margin-top: 50px;
-    margin-left: 30px;
 }
 
 .box-favorite h2 {
-    text-align: left;
+    text-align: center;
     display: inline-block;
     vertical-align: middle;
 }
