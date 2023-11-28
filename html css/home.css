@@ -79,6 +79,7 @@ h1 {
 }
 
 
+/* style facilities */
 .box-Facilities {
     text-align: center;
     height: 627px;
@@ -111,12 +112,53 @@ h1 {
     margin: 80px;
 }
 
+
+/* style Favorite Room */
 .box-favorite {
-    text-align: center;
     height: 627px;
     width: 1440px;
     margin: 0;
+    margin-top: 50px;
+    margin-left: 30px;
 }
+
+.box-favorite h2 {
+    text-align: left;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.favorite {
+    color: black;
+}
+
+.room {
+    color: #936929;
+}
+
+.box-favorite a {
+    text-align: right;
+}
+
+.box-favorite a {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 800px;
+    color: #724B00;
+    font-size: small;
+    text-decoration: none;
+    padding: 5px 7px;
+    border: solid 1px #724B00;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.box-favorite a:hover {
+    color: #f0f0f0;
+    background-color: #724B00;
+}
+
+
+
 
 /* Style Footer */
 .footer {
