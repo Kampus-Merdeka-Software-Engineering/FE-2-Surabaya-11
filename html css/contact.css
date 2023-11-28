@@ -1,6 +1,152 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+#header {
+    position: relative;
+}
+
+#logo {
+    max-width: 90px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+}
+
+/*style navigation bar*/
+.navbar {
+    margin: 20px;
+    float: right;
+    overflow: hidden;
+    text-align:center;
+    padding: 0px;
+    align-items:center;
+    display:inline-flex;
+    background-color: #372B2B;
+    border-radius: 5px;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    padding: 10px;
+    margin-right: 10px;
+    color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+}
+
+.navbar button {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar li :hover {
+    background-color:#f0f0f0;
+    color: #592D2D;
+}
+
 .images {
-    width: 100%;
-    height: 400 px;
+    width: 40%;
+    height: 50 px;
+    align-items: right;  
+}
+
+/* Contact Us Style*/
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62,5%
+}
+   
+body {
+    background: linear-gradient (90deg, #372B2B 0%);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    line-height: 1,5;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
     align-items: center;
-    
+    justify-content: center;
+}
+
+.wrapper {
+    background: #edb674f1;
+    width: 90%;
+    padding: 2rem;
+    box-shadow: 0 0px 2.2px rgba(0, 0, 0, 0.028), 0 0px 5.3px rgba(0, 0, 0, 0.04), 0 0px 10px rgb(0, 0, 0, 0.05);
+}
+
+h2{
+    background: rgba(135, 92, 75, 0.94);
+    color: white;
+    letter-spacing: 0.1rem;
+    padding: 1rem;
+    cursor: default;
+}
+
+form,
+input,
+textarea,
+button{
+    font-family: inherit;
+    font-size: initial;    
+}
+
+.form group label{
+    display: block;
+    margin: 2re, 0 0.5rem 0;
+}
+
+.form-group input {type="text"}
+.form-group input {type="email"}
+.form-group textarea {
+    width: 100%;
+    padding: 1rem 0.8rem ;
+    border: 1px solidcolor (0, 0, 0, 0.2);
+    outline: 0;
+    transition: border 0,15s;
+}
+
+/* Style Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #8e794f;
+    position: relative;
+}
+
+.logofooter {
+    display: flex;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.logofooter img {
+    height: 56px ;
+    width: 65px;
+    display: flex;
+    margin-left: 150px;
+    border-style: groove;
+    margin-right: 5px;
+}
+
+.logofooter p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.copyright {
+    margin-top: auto;
+    font-size: smaller;
+    margin-left: 10px;
+    margin-right: 10px;
 }
