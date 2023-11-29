@@ -118,16 +118,18 @@ h1 {
 
 /* style Favorite Room */
 .box-favorite {
-    text-align: center;
-    height: 627px;
+    height: 600px;
     width: 1440px;
     margin: 0;
+    margin-top: 50px;
+    margin-left: 30px;
 }
 
 .box-favorite h2 {
-    text-align: center;
+    text-align: left;
     display: inline-block;
     vertical-align: middle;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .favorite {
@@ -138,7 +140,7 @@ h1 {
     color: #936929;
 }
 
-.box-favorite a {
+.view {
     display: inline-block;
     vertical-align: middle;
     margin-left: 800px;
@@ -147,26 +149,132 @@ h1 {
     text-decoration: none;
     padding: 5px 7px;
     border: solid 1px #724B00;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
 }
 
-.box-favorite a:hover {
+.view:hover
+ {
     color: #f0f0f0;
     background-color: #724B00;
 }
 
-.box-rooms img {
+.box-rooms {
+    display: flex;
+}
+
+.box-rooms1, .box-rooms2, .box-rooms3 {
+    background-color: #f0f0f0;
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+
+/* .box-rooms2 {
+    background-color: #f0f0f0;
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 20px; 
+} */
+
+.room-images {
     width: 300px;
     height: 200px;
-    background-color: #936929;
+    border-radius: 15px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-room {
+    display: flex;
+    align-items: center;
+    left: 25px;
+    bottom: 0;
+    position: absolute;
+    top: 20px;
 }
 
 .icon-room img {
-    width: 37px;
-    height: 37px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     overflow: hidden;
+    background-color: #f0f0f0;
+    border: 1px solid gray;
 }
+
+.icon-room p, .icon-room img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon-item {
+    margin: 10px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+p, h4, a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content-room {
+    position: absolute;
+    top: 280px;
+    left: 25px;
+    align-items: center;
+}
+
+.content-room h4 {
+    margin-bottom: 15px;
+    font-size: medium;
+}
+
+.content-room p {
+    margin-top: 0px;
+    font-size: medium;
+}
+
+.harga {
+    color: #936929;
+    font-weight: bold;
+}
+
+.day {
+    color: black;
+}
+
+.price a {
+    margin-left: 50px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #936929;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.book :hover {
+    color:#936929;
+    background-color: white;
+}
+
+.price p {
+    margin-left: 25px;
+}
+
+.price p, .price a {
+    display: inline-flex;
+    margin-top: 450px;
+}
+
 
 /* Style Footer */
 .footer {
