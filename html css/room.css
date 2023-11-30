@@ -1,0 +1,243 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    /* background-image: url("images/reeleven\ building.jpeg");
+    background-repeat: no-repeat; */
+}
+
+#header {
+    position: relative;
+    z-index: 2;
+}
+
+#logo {
+    max-width: 90px; 
+    display: inline-block; 
+    vertical-align: middle; 
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block; 
+    vertical-align: middle; 
+    margin: 0;
+}
+
+/* style navigation bar */
+.navbar {
+    margin:20px;
+    float: right;
+    overflow: hidden;
+    text-align: center;
+    padding: 0px;
+    align-items: center;
+    display: inline-flex;
+    background-color: #372B2B;
+    border-radius: 5px;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+    padding: 10px;
+    margin-right: 10px;
+    color: #f0f0f0;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.navbar button {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar li :hover {
+    background-color:#f0f0f0;
+    color: #592D2D;
+}
+
+
+/* style Favorite Room */
+.box-favorite {
+    height: 900px;
+    width: 1440px;
+    margin: 0;
+    margin-top: 15px;
+    padding-top: 20px;
+    padding-bottom: 500px;
+    background-color: #CBC6B5;
+}
+
+.box-favorite h2 {
+    text-align: center;
+    vertical-align: middle;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 200%;
+}
+
+.all-box-rooms {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.box-rooms, .box-rooms-2 {
+    display: flex;
+}
+
+.box-rooms1, .box-rooms2, .box-rooms3 {
+    background-color: #f0f0f0;
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 10px;
+    margin-right: 30px;
+    box-shadow: 4px 4px 6px grey;
+}
+
+.box-rooms4, .box-rooms5, .box-rooms6 {
+    background-color: #f0f0f0;
+    width: 350px;
+    height: 500px;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 60px;
+    margin-right: 30px;
+    box-shadow: 4px 4px 6px grey;
+}
+
+
+.room-images {
+    width: 320px;
+    height: 210px;
+    border-radius: 15px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-room {
+    display: flex;
+    align-items: center;
+    left: 25px;
+    bottom: 0;
+    position: absolute;
+    top: 20px;
+}
+
+.icon-room img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    border: 1px solid gray;
+}
+
+.icon-room p, .icon-room img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.icon-item {
+    margin: 10px;
+    align-items: center;
+    margin-left: 10px;
+}
+
+p, h4, a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content-room {
+    position: absolute;
+    top: 280px;
+    left: 25px;
+    align-items: center;
+}
+
+.content-room h4 {
+    margin-bottom: 15px;
+    font-size: medium;
+}
+
+.content-room p {
+    margin-top: 0px;
+    font-size: medium;
+}
+
+.harga {
+    color: #936929;
+    font-weight: bold;
+}
+
+.day {
+    color: black;
+}
+
+.price a {
+    margin-left: 30px;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #936929;
+    border-radius: 15px;
+    font-weight: bold;
+}
+
+.book :hover {
+    color:#936929;
+    background-color: white;
+}
+
+.price p {
+    margin-left: 25px;
+}
+
+.price p, .price a {
+    display: inline-flex;
+    margin-top: 450px;
+}
+
+/* Style Footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f0f0f0
+}
+
+.logofooter {
+    display: flex;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.logofooter img {
+    height: 56px ;
+    width: 65px;
+    display: flex;
+    margin-left: 150px;
+    border-style: groove;
+    margin-right: 5px;
+}
+
+.logofooter p {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.copyright {
+    margin-top: auto;
+    font-size: smaller;
+    margin-left: 10px;
+    margin-right: 10px;
+}
