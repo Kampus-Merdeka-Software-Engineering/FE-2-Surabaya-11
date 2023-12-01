@@ -83,8 +83,8 @@ h1 {
 /* style facilities */
 .box-Facilities {
     text-align: center;
-    height: 627px;
-    width: 1440px;
+    height: 500px;
+    width: 1300px;
     margin: 0;
 }
 
@@ -95,7 +95,7 @@ h1 {
     text-align: center;
     color: #f0f0f0;
     padding: 20px 20px;
-    margin: 70px 20px 20px 70px;
+    margin: 60px 10px 10px 60px;
     border-radius: 15px;
     float: left;
 }
@@ -103,23 +103,28 @@ h1 {
 
 /* style Service */
 .container {
-    background-color: rgb(255, 205, 187);
+    background-color: #CBC6B5;
     text-align: center;
-    height: 627px;
-    width: 1440px;
+    height: 500px;
+    width: 1300px;
+}
+
+.container h2 {
+    padding: 30px;
 }
 
 .grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin: 80px;
+    margin-top: 10px;
 }
 
 
 /* style Favorite Room */
 .box-favorite {
     height: 600px;
-    width: 1440px;
+    width: 1300px;
     margin: 0;
     margin-top: 50px;
     margin-left: 30px;
