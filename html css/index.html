@@ -48,35 +48,35 @@
     <!-- Hero End -->
 
     <!-- Search Bar Start-->
-    <form action="">
-        <label for="city">Enter a City</label> <br>
-        <input type="text" id="city">
-            <br> 
-        <label for="checkin">Check In</label> <br>
-        <input required type="date" id="checkin">
-            <br>
-        <label for="checkout">Check Out</label> <br>
-        <input required type="date" id="checkout">
-            <br>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospitality Search Bar</title>
+    <link rel="stylesheet" href="melyana.css">
+</head>
+<body>
+
+<div class="search-container">
+    <form action="/search" method="get">
+        <div class="checkin">
+            <label for="checkInDate">Check-in Date:</label> <br> 
+            <input type="date" id="checkInDate" name="checkInDate" required>
+        </div>
+
+        <div class="checkout">
+            <label for="checkOutDate">Check-out Date:</label> <br>
+            <input type="date" id="checkOutDate" name="checkOutDate" required>
+        </div>
         
-        <label for="room">Room</label><br>
-        <select name="Room" id="room">Room
-            <option value="1">1 Room</option>
-            <option value="2">2 Room</option>
-            <option value="3">3 Room</option>
-            <option value="4">4 Room</option>
-        </select>
-            <br>
-        <label for="guest">Guest</label><br>
-        <select name="Guest" id="guest">
-            <option value="1">1 Guest</option>
-            <option value="2">2 Guest</option>
-            <option value="3">3 Guest</option>
-            <option value="4">4 Guest</option>
-        </select>
-            <br>
-        <input type="submit" value="Search">
-    </form> 
+        <div class="number">
+            <label for="rooms">Number of Rooms:</label> <br>
+            <input type="number" id="rooms" name="rooms" min="1" required> <br>
+        </div>
+        <button type="submit">Search</button>
+    </form>
+</div>
     <!-- Search Bar End -->
 
     <!-- Facilities Start -->
