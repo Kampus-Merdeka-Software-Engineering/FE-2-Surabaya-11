@@ -1,4 +1,5 @@
 body {
+    font-family: Arial, sans-serif;
     margin: 0px;
     padding: 0px;
 }
@@ -47,6 +48,7 @@ h1 {
     color: #f0f0f0;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .navbar button {
@@ -59,76 +61,23 @@ h1 {
 }
 
 
-
-/* Contact Us Style*/
-/* Reset some default styles */
-body, h1, h2, p, ul, li, form {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5; /* Light gray background color */
-    color: #333; /* Dark text color */
-}
-
-/* Header styles */
-#Header {
-    background-color: #8B4513; /* Saddle Brown header background color */
-    padding: 20px;
-    text-align: center;
-    color: #fff; /* White text color */
-}
-
-#logo {
-    width: 100px; /* Adjust the logo width as needed */
-}
-
-h1 {
-    font-size: 1.5em;
-    margin-top: 10px;
-}
-
-.navbar {
-    margin-top: 20px;
-}
-
-.navbar ul {
-    list-style-type: none;
-}
-
-.navbar ul li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.navbar a {
-    text-decoration: none;
-    color: #fff; /* White text color */
-}
-
-button {
-    background-color: #8B4513; /* Saddle Brown button background color */
-    color: #fff; /* White text color */
-    padding: 10px 15px;
-    border: none;
-    cursor: pointer;
-}
-
 /* Wrapper and Contact Us section styles */
 .wrapper {
     text-align: center;
     padding: 20px;
+    background-color: #372B2B;
+    padding-bottom: 80px;
 }
 
 h2 {
-    color: #8B4513; /* Saddle Brown heading color */
+    color: #f0f0f0; /* Saddle Brown heading color */
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
 }
 
 .content {
-    background-color: #fff; /* White content background color */
-    padding: 20px;
+    background-color: #f0f0f0;
+    padding: 50px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
@@ -145,7 +94,7 @@ form {
 label {
     display: block;
     margin-bottom: 5px;
-    color: #8B4513; /* Saddle Brown label color */
+    color: black; /* Saddle Brown label color */
 }
 
 input,
@@ -158,32 +107,9 @@ textarea {
 
 /* Footer styles */
 .footer {
-    background-color: #8B4513; /* Saddle Brown footer background color */
-    color: #fff; /* White text color */
-    padding: 20px;
-    text-align: center;
-}
-
-.logofooter img {
-    width: 50px; /* Adjust the logo width as needed */
-}
-
-.quiklinks, .Company, .Contact {
-    margin-top: 20px;
-}
-
-.quiklinks a {
-    color: #fff; /* White link color */
-    text-decoration: none;
-}
-
-.copyright {
-    margin-top: 20px;
-}
-.footer {
     display: flex;
     justify-content: space-between;
-    background-color: coklat;
+    background-color: #f0f0f0
 }
 
 .logofooter {
