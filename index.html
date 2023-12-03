@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reeleven Hotel</title>
+    <link href="html css/home.css" rel="stylesheet" type="text/css" > 
+</head>
+
+<body>
+    <!-- logo -->
+    <section id="Header">
+        <a href="index.html">
+            <img id="logo" src="html css/images/Logo 2.jpg"/> 
+        </a>
+        <h1>Reeleven<br>Hotel</h1>
+
+   <!-- Navbar Start -->
+        <div class="navbar">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="html css/room.html">Room</a>
+                </li>
+                <li>
+                   <a href="html css/about.html">About Us</a> 
+                </li>
+                <li>
+                    <a href="html css/contact.html">Contact Us</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- Navbar End -->
+
+    <!-- Hero Start -->
+    <section id="hero">
+        <!-- tambahkan foto saja -->
+        <img src="html css/images/reeleven building.jpeg" alt="">
+    </section>
+    <!-- Hero End -->
+
+    <!-- Search Bar Start-->
+<div class="search-container">
+    <form action="/search" method="get">
+        <div class="checkin">
+            <label for="checkInDate">Check-in Date:</label> <br> 
+            <input type="date" id="checkInDate" name="checkInDate" required>
+        </div>
+
+        <div class="checkout">
+            <label for="checkOutDate">Check-out Date:</label> <br>
+            <input type="date" id="checkOutDate" name="checkOutDate" required>
+        </div>
+        
+        <div class="number">
+            <label for="rooms">Number of Rooms:</label> <br>
+            <input type="number" id="rooms" name="rooms" min="1" required> <br>
+        </div>
+        <button type="submit">Search</button>
+    </form>
+</div>
+    <!-- Search Bar End -->
+
+    <!-- Facilities Start -->
+    <div class="box-Facilities">
+        <h2>Facilities</h2>
+        <div class="box-kiri">
+            <img src="html css/images/icons/parking_icon_151164.png" width="80px" height="80px">
+            <p><h4>Free Parking</h4></p>
+            <p>Presents freedom from parking fees to enhance user convenience</p>
+        </div>
+
+        <div class="box-kiri2">
+            <img src="html css/images/icons/wifi_icon_151000.png" width="80px" height="80px">
+            <p><h4>Free Wifi</h4></p>
+            <p>Offers convenient access to the internet at no extra cost</p>
+        </div>
+
+        <div class="box-kanan2">
+            <img src="html css/images/icons/services.png" width="80px" height="80px">
+            <p><h4>Free Services</h4></p>
+            <p>Providing room service with a focus on cleanliness and comfort</p>
+        </div>
+
+        <div class="box-kanan">
+            <img src="html css/images/icons/swimming_sport_13275.png" width="80px" height="80px">
+            <p><h4>Swimming Pool</h4></p>
+            <p>An elegantly designed and attractive swimming pool</p>
+        </div>
+    </div>
+    <!-- Facilities End -->
+
+    <!-- Our Service Start -->
+    <div class="container">
+        <h2>Our Service</h2>
+        <main class="grid">
+            <article>
+                <img src="html css/images/hotel room.jpg" width="350px" height="250px">
+                <div class="konten">
+                <h3>Clean Room</h3>
+                </div>
+            </article>
+
+            <article>
+                <img src="html css/images/hotel restaurant.jpg" width="350px" height="250px">
+                <div class="konten">
+                <h3>Restaurant</h3>
+                </div>
+            </article>
+
+            <article>
+                <img src="html css/images/gym center hotel.jpg" width="350px" height="250px">
+                <div class="konten">
+                <h3>Fitnes Centre</h3>
+                </div>
+            </article>
+        </main>
+    </div>
+    <!-- Our Service End -->
+
+     <!-- Our Favorite Room Start -->
+   <div class="box-favorite">
+    <h2>
+        <span class="favorite">Our Favorite</span>
+        <span class="room"> Room</span>
+    </h2>
+    <a class="view" href="html css/room.html">View All</a> 
+
+    <div class="box-rooms"> 
+        <div class="box-rooms1">
+            <img class="room-images" src="html css/images/room/room 2.jpg" alt="">
+            <div class="icon-room">
+                <div class="icon-item">
+                    <img src="html css/images/icons/bed icon.jpg" alt="">
+                    <p>1</p>
+                </div>
+                <div class="icon-item">
+                    <img src="html css/images/icons/bathtub icon.jpg" alt="">
+                    <p>1</p>
+                </div>
+                <div class="icon-item">
+                    <img src="html css/images/icons/home icon.jpg" alt="">
+                    <p>240m²</p>
+                </div>
+                <div class="icon-item">
+                    <img src="html css/images/icons/orang berdiri 2.png" alt="">
+                    <p>3</p>
+                </div>
+            </div>
+
+            <div class="content-room">
+                <h4>Premium Room</h4>
+                <p>Indulge in luxury with our premium<br>
+                    hotel rooms. Immerse yourself in<br>
+                    elegant design, modern amenities,<br>
+                    and unparalleled comfort</p>
+            </div>
+
+            <div class="price">
+                <p><span class="harga">Rp7.499.999</span>
+                    <span class="day">/day</span></p>
+                <a class="book" href="##"> Book Now</a>
+            </div>
+        </div>
+
+        <div class="box-rooms2">
+            <img class="room-images" src="html css/images/room/room 2.jpg" alt="">
+            <div class="icon-room">
+                <div class="icon-item">
+                    <img src="html css/images/icons/bed icon.jpg" alt="">
+                    <p>2</p>
+                </div>
+                <div class="icon-item">
+                    <img src="html css/images/icons/bathtub icon.jpg" alt="">
+                    <p>1</p>
+                </div>
+                <div class="icon-item">
+                    <img src="html css/images/icons/home icon.jpg" alt="">
+                    <p>240m²</p>
+                </div>
+                <div class="icon-item">
+                    <img src="html css/images/icons/orang berdiri 2.png" alt="">
+                    <p>4</p>
+                </div>
+            </div>
+    
+            <div class="content-room">
+                <h4>Suite Room</h4>
+                <p>Experience opulence in our suite <br>
+                    rooms, a perfect blend of luxury <br>
+                    and comfort for an exquisite stay</p>
+            </div>
+    
+            <div class="price">
+                <p><span class="harga">Rp7.499.999</span>
+                    <span class="day">/day</span></p>
+                    <a href="##">Book Now</a>
+            </div>
+        </div>
+
+        <div class="box-rooms3">
+            <img class="room-images" src="html css/images/room/room 2.jpg" alt="">
+            <div class="icon-room">
+                <div class="icon-item">
+                    <img src="html css/images/icons/bed icon.jpg" alt="">
+                    <p>3</p>
+                </div>
+                <div class="icon-item">
+                    <img src="html css/images/icons/bathtub icon.jpg" alt="">
+                    <p>2</p>
+                </div>
+                <div class="icon-item">
+                    <img src="html css/images/icons/home icon.jpg" alt="">
+                    <p>320m²</p>
+                </div>
+                <div class="icon-item">
+                    <img src="html css/images/icons/orang berdiri 2.png" alt="">
+                    <p>4</p>
+                </div>
+            </div>
+    
+            <div class="content-room">
+                <h4>Queen Suite Room</h4>
+                <p>Indulge in royal comfort with our<br>
+                    Queen Suite, a perfect retreat for a <br>
+                    lavish stay</p>
+            </div>
+    
+            <div class="price">
+                <p><span class="harga">Rp7.499.999</span>
+                    <span class="day">/day</span></p>
+                    <a href="##">Book Now</a>
+            </div>
+        </div>
+    </div>
+    </div>
+<!-- Our Favorite Room End --> 
+
+    <!-- Footer Start -->
+    <footer class="footer">
+        <div class="logofooter">
+            <img src="html css/images/Logo 2.jpg">
+            <p><b>REELEVEN<br>HOTEL</b></p>
+        </div>
+
+        <div class="quiklinks">
+            <h4>Quick Links</h4>
+                <a href="html css/about.html">About Our Company</a> <br>
+                <a href="">Service We Provide</a> <br>
+                <a href="">Privacy and Policy</a> <br>
+                <a href="html css/contact.html">Contact Us</a> <br>
+        </div>
+        
+        <div class="Company">
+            <h4>Company</h4>
+                <p>About Company</p> 
+                <p>Our Terstimonies</p>
+                <p>Latest News</p>
+                <p>Our Mission</p>
+        </div>
+
+        <div class="Contact Us">
+            <h4>Contact Us</h4>
+                <p>Jl. Merdeka, Jakarta</p> 
+                <p>+62 812-6128-2456</p> 
+                <p>reelevenhotel@gmail.com</p> 
+        </div>
+        
+        <div class="copyright">
+            <p>2023 Reeleven Hotel, All Right Reserved</p>
+        </div>
+    </footer>
+    <!-- Footer End -->
+</body>
+</html>
