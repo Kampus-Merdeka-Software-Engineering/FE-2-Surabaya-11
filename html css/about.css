@@ -47,6 +47,7 @@ h1 {
     color: #f0f0f0;
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 5px;
+    text-decoration: none;
 }
 
 .navbar button {
@@ -102,14 +103,11 @@ h1 {
 }
 
 
-
-
 /* Style Footer */
 .footer {
     display: flex;
     justify-content: space-between;
     background-color: #D4D1CB;
-    position: relative;
 }
 
 .logofooter {
@@ -127,8 +125,24 @@ h1 {
     margin-right: 5px;
 }
 
+.footer h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    margin-top: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .logofooter p {
     font-family: 'Times New Roman', Times, serif;
+    padding-top: 8px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
 }
 
 .copyright {
@@ -137,4 +151,3 @@ h1 {
     margin-left: 10px;
     margin-right: 10px;
 }
-

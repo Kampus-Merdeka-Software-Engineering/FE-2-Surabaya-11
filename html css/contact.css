@@ -105,11 +105,11 @@ textarea {
     border-radius: 4px;
 }
 
-/* Footer styles */
+/* Style Footer */
 .footer {
     display: flex;
     justify-content: space-between;
-    background-color: #f0f0f0
+    background-color: #D4D1CB;
 }
 
 .logofooter {
@@ -127,8 +127,24 @@ textarea {
     margin-right: 5px;
 }
 
+.footer h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer p {
+    margin-bottom: 10px;
+    margin-top: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .logofooter p {
     font-family: 'Times New Roman', Times, serif;
+    padding-top: 8px;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
 }
 
 .copyright {
