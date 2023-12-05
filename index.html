@@ -35,34 +35,40 @@
     </section>
     <!-- Navbar End -->
 
-    <!-- Hero Start -->
-    <section id="hero">
-        <!-- tambahkan foto saja -->
-        <img src="html css/images/reeleven building.jpeg" alt="">
-    </section>
-    <!-- Hero End -->
-
-    <!-- Search Bar Start-->
-<div class="search-container">
-    <form action="/search" method="get">
-        <div class="checkin">
-            <label for="checkInDate">Check-in Date:</label> <br> 
-            <input type="date" id="checkInDate" name="checkInDate" required>
-        </div>
-
-        <div class="checkout">
-            <label for="checkOutDate">Check-out Date:</label> <br>
-            <input type="date" id="checkOutDate" name="checkOutDate" required>
+    
+        <!-- Hero Searchbar Start -->
+    <div class="hero-searchbar">
+        <div class="hero-img">
+            <img src="html css/images/reeleven building.jpeg" alt="">
         </div>
         
-        <div class="number">
-            <label for="rooms">Number of Rooms:</label> <br>
-            <input type="number" id="rooms" name="rooms" min="1" required> <br>
+        <!-- Search Bar Start-->
+        <div class="search-container">
+            <form action="/search" method="get">
+                <div class="checkin">
+                    <label for="checkInDate">Check-in Date:</label> <br> 
+                    <input type="date" id="checkInDate" name="checkInDate" required>
+                </div>
+
+                <div class="checkout">
+                    <label for="checkOutDate">Check-out Date:</label> <br>
+                    <input type="date" id="checkOutDate" name="checkOutDate" required>
+                </div>
+                
+                <div class="number">
+                    <label for="rooms">Number of Person:</label> <br>
+                    <input type="number" id="rooms" name="rooms" min="1" max="4" required> <br>
+                </div>
+                <button type="submit">Search</button>
+            </form>
         </div>
-        <button type="submit">Search</button>
-    </form>
-</div>
-    <!-- Search Bar End -->
+        <!-- Search Bar End -->
+        <!-- Hero Searchbar End -->
+    </div>
+    
+    
+
+    
 
     <!-- Facilities Start -->
     <div class="box-Facilities">

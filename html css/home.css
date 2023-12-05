@@ -2,8 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0px;
     padding: 0px;
-    /* background-image: url("images/reeleven\ building.jpeg");
-    background-repeat: no-repeat; */
 }
 
 #header {
@@ -68,40 +66,31 @@ h1 {
 } */  
 
 /* style hero */
-#hero {
-    position: relative;
-    z-index: 1;
-}
-
-#hero img {
-    height: 627px;
-    width: 1440px;
+.hero-img {
+    height: 500px;
+    width: 1300px;
     margin: 0;
+    position:relative;
+    z-index: 1;
+    display: block;
 }
 
 
 /* Style SearchBar */
-.search-container {
-    width: 800px;
-    height: 70px;
-    background: color #FFFBF6;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 0 auto;
-    text-align: center;
-
-}
-
 .search-container {
     width: 700px;
     height: 85px;
     background-color: #FFFBF6; 
     padding: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 300px;
+    margin-top: -200px;
 }
+
 
 form {
     display: flex;
@@ -110,6 +99,7 @@ form {
     position: relative;
     flex-direction: row;
     margin-left: 70px;
+    align-items: center;
 }
 
 .checkin, .checkout, .number, button {
@@ -139,8 +129,8 @@ button {
     margin-left: 5px;
 }
 
-Add vertical lines between form elements */
-form::before,
+/* Add vertical lines between form elements  */
+/* form::before,
 form::after {
     content: '';
     position: absolute;
@@ -155,7 +145,7 @@ form::before {
 
 form::after {
     left: calc(66.666% - 1px);
-}
+} */
 
 /* style facilities */
 .box-Facilities {
@@ -163,6 +153,8 @@ form::after {
     height: 500px;
     width: 1300px;
     margin: 0;
+    position: static;
+    margin-top: 500px;
 }
 
 .box-kiri, .box-kiri2, .box-kanan2, .box-kanan {
