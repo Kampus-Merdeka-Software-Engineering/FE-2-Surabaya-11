@@ -1,23 +1,28 @@
 function submitForm() {
-    const form = document.getElementById('contactForm');
-    const formData = new FormData(form);
+    console.log("Data masuk");
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
 
-    fetch('url_server_anda', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => {
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        return response.json();
-    })
+    const formData = new FormData();
+    formData.append("name", name);
+    formData.append("email", email);
+    formData.append("message", message);
+
+    fetch("http://localhost:3000/submit-form", {
+  method: 'POST',
+  headers: {
+    'Content-Type': 'multipart/form-data'
+  },
+  body: formData
+})
+
+    .then(response => response.json())
     .then(data => {
-        // Handle the response from the server (optional)
-        console.log(data);
+        console.log("Pesan Berhasil Dikirim", data);
     })
+
     .catch(error => {
-        // Handle errors during the fetch
-        console.error('There was a problem with the fetch operation:', error);
-    });
+        console.error("Gagal mengirim data:", error);
+      });
 }
