@@ -10,19 +10,25 @@ function submitForm() {
     formData.append("message", message);
 
     fetch("http://localhost:3000/submit-form", {
-  method: 'POST',
-  headers: {
-    'Content-Type': 'multipart/form-data'
-  },
-  body: formData
-})
-
-    .then(response => response.json())
+      method: 'POST',
+      headers: {
+        'Content-Type': 'multipart/form-data'
+      },
+      body: formData
+    }).then(response => response.json())
     .then(data => {
-        console.log("Pesan Berhasil Dikirim", data);
-    })
-
-    .catch(error => {
-        console.error("Gagal mengirim data:", error);
+      console.log("Pesan Berhasil Dikirim", data);
+      const baseUrl = window.location.href.split("/").slice(0, 3).join("/");
+      window.location.replace(baseUrl + "/pages/contact.html");
+      showAlert({
+        type: "success",
+        message: "Pesan Berhasil Dikirim"
       });
+    }).catch(error => {
+      console.error("Gagal mengirim data:", error);
+      showAlert({
+        type: "error",
+        message: "Gagal mengirim data"
+      });
+    });
 }
