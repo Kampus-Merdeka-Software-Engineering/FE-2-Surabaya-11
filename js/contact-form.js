@@ -12,19 +12,29 @@ function submitForm() {
     fetch("http://localhost:3000/submit-form", {
       method: 'POST',
       headers: {
-        'Content-Type': 'multipart/form-data'
+        'Content-Type': 'application/json'
       },
-      body: formData
-    }).then(response => response.json())
+      body: JSON.stringify({
+        name: name,
+        email: email,
+        message: message
+      })
+    })
+    
+    .then(response => response.json())
+
     .then(data => {
       console.log("Pesan Berhasil Dikirim", data);
+      
       const baseUrl = window.location.href.split("/").slice(0, 3).join("/");
       window.location.replace(baseUrl + "/pages/contact.html");
       showAlert({
         type: "success",
         message: "Pesan Berhasil Dikirim"
       });
-    }).catch(error => {
+    })
+    
+    .catch(error => {
       console.error("Gagal mengirim data:", error);
       showAlert({
         type: "error",
