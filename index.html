@@ -43,25 +43,29 @@
         </div>
         
         <!-- Search Bar Start-->
-        <div class="search-container">
-            <form action="/search" method="get">
-                <div class="checkin">
-                    <label for="checkInDate">Check-in Date:</label> <br> 
-                    <input type="date" id="checkInDate" name="checkInDate" required>
-                </div>
-
-                <div class="checkout">
-                    <label for="checkOutDate">Check-out Date:</label> <br>
-                    <input type="date" id="checkOutDate" name="checkOutDate" required>
-                </div>
-                
-                <div class="number">
-                    <label for="rooms">Number of Person:</label> <br>
-                    <input type="number" id="rooms" name="rooms" min="1" max="4" required> <br>
-                </div>
-                <button type="submit">Search</button>
-            </form>
+        <div class="container-class">
+            <h1>REELEVEN</h1>
+            <div class="search-container">
+                <form action="/search" method="get">
+                    <div>
+                        <label for="checkInDate">Check-in Date:</label> <br> 
+                        <input type="date" id="checkInDate" name="checkInDate" required>
+                    </div>
+    
+                    <div>
+                        <label for="checkOutDate">Check-out Date:</label> <br>
+                        <input type="date" id="checkOutDate" name="checkOutDate" required>
+                    </div>
+                    
+                    <div>
+                        <label for="rooms">Number of Person:</label> <br>
+                        <input type="number" id="rooms" name="rooms" min="1" max="4" required> <br>
+                    </div>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
         </div>
+        
         <!-- Search Bar End -->
         <!-- Hero Searchbar End -->
     </div>
