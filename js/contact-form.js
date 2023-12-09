@@ -1,5 +1,9 @@
 function submitForm() {
+    // alert("Thank you for your message!");
+    // window.location.href = "contact.html";
+
     console.log("Data masuk");
+    
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
@@ -27,7 +31,7 @@ function submitForm() {
       console.log("Pesan Berhasil Dikirim", data);
       
       const baseUrl = window.location.href.split("/").slice(0, 3).join("/");
-      window.location.replace(baseUrl + "/pages/contact.html");
+      window.location.replace(baseUrl + "contact.html");
       showAlert({
         type: "success",
         message: "Pesan Berhasil Dikirim"
