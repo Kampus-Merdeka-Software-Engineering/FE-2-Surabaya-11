@@ -212,6 +212,7 @@ button {
 
 .box-rooms {
   display: flex;
+  margin: 10px;
 }
 
 .box-rooms1,
@@ -301,7 +302,7 @@ a {
 }
 
 .price a {
-  margin-left: 50px;
+  margin-left: 40px;
   padding: 10px;
   text-decoration: none;
   color: white;
