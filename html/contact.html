@@ -41,29 +41,65 @@
         <h2>CONTACT US</h2>
         <div class="content">
             <div class="text">
-                <form action="/submitForm" method="post">
+                <form id="form" method="post">
                     <div class="form-group">
                         <label for="">Full Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" name="name" required>
                     </div>
                     <div class="form-group">
                         <label for="">Email Adress</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" name="email" required>
                     </div>
                     <div class="form-group">
                         <label for="">Message</label>
-                        <textarea name="message" id="message" rows="5" required
-                        placeholder="Type your message here....."></textarea>
+                        <input name="message" rows="5" required
+                        placeholder="Type your message here.....">
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" class="submit" onclick="submitForm()">Send Message</button>
+                        <button type="submit" class="submit">Send Message</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
     <!-- Contact Us End -->
+
+    <script>
+
+    const form = document.getElementById('form');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const prePayload = new FormData(form);
+    const payload = new URLSearchParams(prePayload);
+
+    console.log([...payload])
+
+    fetch('http://localhost:3000/api/contacts', {
+        method: "POST",
+        body: prePayload,
+    })
+
+        .then(res => res.json())
+        .then(data => console.log(data))
+            
+        .catch(err => console.log(err));
+})
+
+// function submitForm() {
+//   alert("Thank you for your message!");
+//   window.location.href = "contact.html";
+// }
+
+
+    </script>
+
+
+
+
+
 
     <!-- Footer Start -->
     <footer class="footer">
@@ -101,8 +137,7 @@
     </footer>
     <!-- Footer End -->
 
-    <script src="../js/contact-form.js"></script>
-
+    
 </body>
 </html>
     
