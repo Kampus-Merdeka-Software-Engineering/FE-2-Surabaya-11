@@ -7,14 +7,12 @@
     <link rel="stylesheet" href="../css/contact.css">
 </head>
 <body>
-      <!-- logo -->
-      <section id="Header">
+    <section id="Header">
         <a href="../index.html">
             <img id="logo" src="../images/Logo 2.jpg"/> 
         </a>
         <h1>Reeleven<br>Hotel</h1>
 
-    <!--Navbar Start-->
         <div class="navbar">
             <ul>
                 <li>
@@ -30,13 +28,9 @@
                     <a href="contact.html">Contact Us</a>
                 </li>
             </ul>
-
-             <!--Button Sign in--> 
         </div>
     </section>
-    <!-- Navbar End -->
-
-    <!--Contact Us Start-->
+      
     <div class="wrapper">
         <h2>CONTACT US</h2>
         <div class="content">
@@ -57,51 +51,13 @@
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" class="submit">Send Message</button>
+                        <button type="submit" class="submit" id="submitButton">Send Message</button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
-    <!-- Contact Us End -->
 
-    <script>
-
-    const form = document.getElementById('form');
-
-form.addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const prePayload = new FormData(form);
-    const payload = new URLSearchParams(prePayload);
-
-    console.log([...payload])
-
-    fetch('http://localhost:3000/api/contacts', {
-        method: "POST",
-        body: prePayload,
-    })
-
-        .then(res => res.json())
-        .then(data => console.log(data))
-            
-        .catch(err => console.log(err));
-})
-
-// function submitForm() {
-//   alert("Thank you for your message!");
-//   window.location.href = "contact.html";
-// }
-
-
-    </script>
-
-
-
-
-
-
-    <!-- Footer Start -->
     <footer class="footer">
         <div class="logofooter">
             <img src="../images/Logo 2.jpg">
@@ -135,7 +91,8 @@ form.addEventListener('submit', function(e) {
             <p>2023 Reeleven Hotel, All Right Reserved</p>
         </div>
     </footer>
-    <!-- Footer End -->
+
+    <script src="../js/contact-form.js"></script>
 
     
 </body>

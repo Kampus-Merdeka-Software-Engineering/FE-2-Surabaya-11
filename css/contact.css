@@ -23,7 +23,6 @@ h1 {
     margin: 0;
 }
 
-/*style navigation bar*/
 .navbar {
     margin: 20px;
     float: right;
@@ -60,8 +59,6 @@ h1 {
     color: #592D2D;
 }
 
-
-/* Wrapper and Contact Us section styles */
 .wrapper {
     text-align: center;
     padding: 20px;
@@ -70,7 +67,7 @@ h1 {
 }
 
 h2 {
-    color: #f0f0f0; /* Saddle Brown heading color */
+    color: #f0f0f0; 
     font-family: 'Times New Roman', Times, serif;
     font-weight: 500;
 }
@@ -79,7 +76,7 @@ h2 {
     background-color: #f0f0f0;
     padding: 50px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
 }
 
 form {
@@ -94,7 +91,7 @@ form {
 label {
     display: block;
     margin-bottom: 5px;
-    color: black; /* Saddle Brown label color */
+    color: black; 
 }
 
 input,
@@ -105,7 +102,6 @@ textarea {
     border-radius: 4px;
 }
 
-/* Style Footer */
 .footer {
     display: flex;
     justify-content: space-between;

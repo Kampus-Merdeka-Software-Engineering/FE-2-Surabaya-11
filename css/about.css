@@ -59,12 +59,11 @@ h1 {
     color: #592D2D;
 }
 
-/* about us style */
 .container {
     background-color: #BEAD8B;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Menyusun kontennya ke tengah secara horizontal */
+    justify-content: center;
    
 }
 
@@ -102,8 +101,6 @@ h1 {
     margin-left: 50px;
 }
 
-
-/* Style Footer */
 .footer {
     display: flex;
     justify-content: space-between;
